@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #181A18;
+    --future-color: #F2F0F2;
+    --feauture-color: #E2F1E8;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    max-width: 100vw;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 100%;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    margin: 0 60px;
+
+}
+header img {
+    width: 130px;
+    height: 58px;
+    margin: auto 0;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+header nav ul li {
+    list-style: none;
+}
+.hamburger {
+    display: none;
+}
+#hero {
+    background-image: url('../images/hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+.hero_text {
+    background-color: var(--background-color);
+    padding: 35px 60px;
+    border-radius: 0px 60px 60px 0px;
+    margin-top: 110px;
+    max-width: 400px;
+}
+.hero_text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#future {
+    background-color: var(--future-color);
+    max-width: 1024px;
+    margin:100px  auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    border-radius: 40px;
+    gap: 200px ;
+}
+.picture{
+    display: flex;
+    flex-direction: row;
+}
+#future .images img {
+    width: 100%;
+    height: auto;
+}
+.future_text{
+    padding: 0px 80px;
+}
+.future_text h2{
+     font-size: 2.5rem;
+}
+.future_text p {
+    font-size: 1rem;
+}
+.feature_text {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+}
+.feature_text h2 {
+    font-size: 2.5rem;
+}
+.feature_box_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 1024px;
+}
+.feature_box {
+    background-color: var(--feauture-color);
+    width: 230px;
+    padding: 25px;
+    border-radius: 20px;
+}
+.feature_box .icon {
+    font-size: 2rem;
+}
+.feature_box p{
+    font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .hero_text {
+        margin: 40px 0px;
+        padding: 10px 20px;
+        border-radius: 0px 70px 70px 0px;
+    }
+    .hero_text h1 {
+        font-size: 2rem;
+    }
+    .hero_text p {
+        font-size: 0.7rem;
+    }
+    #future {
+        margin:100px  20px ;
+    }
+    .future_text h2{
+        font-size: 1.7rem;
+   }
+    .feature_text p{
+        font-size: 0.8rem;
+        margin:0px  20px ;
+    }
+    .feature_box_section {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature_box {
+        width: 400px;
+    }
+}
+@media (max-width: 425px) {
+    .hamburger{
+        display: block;
+    }
+    header {
+        margin: 0 20px;
+    }
+    header img {
+        width: 80px;
+        height: 50px;
+    }
+    header nav ul {
+        display: none;
+    }
+    .hero_text {
+        padding: 10px 10px;
+        border-radius: 0px 30px 30px 0px;
+        margin-top: 20px;
+        max-width: 200px;
+    }
+    
+    .hero_text h1 {
+        font-size: 1.5rem;
+    }
+    #future {
+        margin:70px 20px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        gap: 0px ;
+    }
+    .lady_img {
+        border-radius: 0px 30px 0px 0px;
+    }
+    #future .images img {
+        width: 50%;
+    }
+    .future_text{
+        padding: 0px 50px;
+    }
+
+    .future_text h2{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-size: 1.8rem;
+   }
+   .future_text p{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .feature_text h2 {
+        font-size: 1.4rem;
+    }
+    .feature_box {
+        width: 340px;
+    }
+}
+@media (max-width: 370px) {
+    .feature_box {
+        width: 280px;
+    }
+}
+
+
